@@ -1,8 +1,8 @@
 package com.example.shopapi.controllers
 
 import com.example.shopapi.domain.Product
+import com.example.shopapi.repositories.ShopRepository
 import org.springframework.web.bind.annotation.*
-import repositories.ShopRepository
 
 
 @RestController

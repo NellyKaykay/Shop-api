@@ -3,11 +3,11 @@ package com.example.shopapi.repositories
 import com.example.shopapi.domain.Product
 import jakarta.annotation.PostConstruct
 import org.springframework.stereotype.Component
-import repositories.ShopRepository
 
 @Component
 class
 DataLoader(private val shopRepository: ShopRepository) {
+
     @PostConstruct
     fun load() {
         val shop = listOf(
@@ -20,7 +20,7 @@ DataLoader(private val shopRepository: ShopRepository) {
 
 
         shopRepository.saveAll(shop)
-        println("Cargamos datos de prueba cuando arrancamos el servidor: $/api/songs")
+        println("Cargamos datos de prueba cuando arrancamos el servidor: $/api/products")
     }
 
 }
